@@ -1,16 +1,41 @@
-# calculators
 
-A new Flutter project.
+## Calculators app
+## APP type
+this is simple calculators app
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## key featuare
+*clear 
+*del
+* equal =
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technic and technoogy
+flutter
+Get x (to mange the state)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+math_expressions for doin 
+ equalPressed() {
+    String userInputFC = userInput;
+    userInputFC = userInputFC.replaceAll("x", "*");
+    Parser p = Parser();
+    Expression exp = p.parse(userInputFC);
+    ContextModel ctx = ContextModel();
+    double eval = exp.evaluate(EvaluationType.REAL, ctx);
+
+    userOutput = eval.toString();
+   
+  }
+
+
+## ui/ux
+![Test Image 4](https://github.com/isavtars/todeywith-provide/blob/unmodifiedlistview/photo_2023-03-15_15-41-43%20(2).jpg)
+![Test Image 4](https://github.com/isavtars/todeywith-provide/blob/unmodifiedlistview/photo_2023-03-15_15-41-43.jpg)
+![Test Image 4](https://github.com/isavtars/todeywith-provide/blob/unmodifiedlistview/photo_2023-03-15_15-41-42.jpg)
+
+
+
+
+## Site link
+host on github
+- [the app that released on github link](https://isavtars.github.io/todoweb/#/)
